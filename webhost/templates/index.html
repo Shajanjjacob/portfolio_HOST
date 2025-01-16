@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}My Portfolio{% endblock %}
+
+{% block content %}
+    <section id="intro">{% include 'intro.html' %}</section>
+    <section id="aboutme">{% include 'aboutme.html' %}</section>
+    <section id="experience">{% include 'experience.html' %}</section>
+    <section id="project">{% include 'project.html' %}</section>
+    <section id="skills">{% include 'skill.html' %}</section>
+    <section id="education">{% include 'education.html' %}</section>
+    <section id="certification">{% include 'certification.html' %}</section>
+    <section id="contact">{% include 'contact.html' %}</section>
+{% endblock %}

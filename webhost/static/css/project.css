@@ -1,0 +1,38 @@
+
+.card-1 {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInFromLeft 1s forwards;
+}
+
+.card-2 {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInFromRight 1s forwards;
+}
+
+
+@keyframes slideInFromLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInFromRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.card-container:hover .card:not(:hover) {
+    filter: blur(4px);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Projects</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/project.css' %}" rel="stylesheet"> 
+</head>
+<body>
+<section id="projects" class="project-section">
+
+<div class="container py-5">
+   
+    <div class="text-center mb-4">
+        <h2>My Projects</h2>
+        <br><br>
+    </div>
+
+    
+    <div class="row row-cols-1 row-cols-md-2 g-4 card-container">
+        
+        <div class="col">
+            <div class="card card-1 h-100">
+                <img src="{% static 'images/vehicle.png' %}" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">Vehicle Service Management</h5>
+                    <p class="card-text">
+                        <ul>
+                        <li>Developed and maintained a Vehicle Management System using Python, Django, MySQL, HTML, CSS, Bootstrap and 
+                            JavaScript. </li>
+                        <li>Created intuitive layouts, inquiry forms, and a dynamic admin dashboard for efficient interactions and management. </li>
+                    </ul>
+                    </p>
+                    <a href="https://github.com/Shajanjjacob/Vehicle-Service" class="btn btn-primary" target="_blank">View Source</a>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="col">
+            <div class="card card-2 h-100">
+                <br>
+                <br>
+                <img src="{% static 'images/gro.jpg' %}" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Online Grocery Shop Website</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li>Employed Python, Django, MySQL, HTML, CSS, Bootstrap and JavaScript to create an Online Grocery Website with a 
+                                seamless user experience.</li> 
+                            <li>Implemented a no-signup, no-login feature for customers, allowing them to browse and order products directly from the 
+                                website.</li> 
+                        
+                        </ul>
+                     </p>
+                    <a href="https://github.com/Shajanjjacob/Grocery" class="btn btn-primary" target="_blank">View Source</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+     <br><br>
+    <div class="text-center mt-4">
+        <a href="https://github.com/Shajanjjacob" class="btn btn-secondary" target="_blank">View More Projects</a>
+    </div>
+</div>
+<br><br><br><br>
+
+</section>
+
+<script src="{% static 'js/project.js' %}"></script> 
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

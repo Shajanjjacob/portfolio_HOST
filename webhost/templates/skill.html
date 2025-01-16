@@ -1,0 +1,171 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'css/skill.css' %}" rel="stylesheet">
+</head>
+<body>
+    <section id="skill" class="skill-section">
+        <h2 class="text-center">My Skills</h2>
+        <br><br>
+
+        <h3 class="text-center">Programming Languages</h3>
+        <br><br>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="{% static 'images/python.webp' %}" alt="python">
+                <span>Python</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/sql.webp' %}" alt="sql">
+                <span>SQL</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/javascript.png' %}" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/c.png' %}" alt="c">
+                <span>C</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/html.webp' %}" alt="html">
+                <span>HTML</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/css.png' %}" alt="css">
+                <span>CSS</span>
+            </div>
+        </div><br><br>
+
+        <h3 class="text-center">Web Development Frameworks</h3>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="{% static 'images/django.png' %}" alt="django">
+                <span>Django</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/flask.png' %}" alt="flask">
+                <span>Flask</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/bootstrap.png' %}" alt="bootstrap">
+                <span>Bootstrap</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/jqry.png' %}" alt="bootstrap">
+                <span>jQuery</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/REACT.png' %}" alt="react">
+                <span>React</span>
+            </div>
+        </div><br><br>
+
+        <h3 class="text-center">Development Tools</h3>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="{% static 'images/vscode.png' %}" alt="VSCode">
+                <span>VSCode</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/pychm.png' %}" alt="PyCharm">
+                <span>PyCharm</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/github.png' %}" alt="git">
+                <span>GitHub</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/git.png' %}" alt="git">
+                <span>Git</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/rest.jpg' %}" alt="api">
+                <span>Rest API</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/docker.webp' %}" alt="docker">
+                <span>Docker</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/Google.png' %}" alt="gcp">
+                <span>Google Cloud Platform</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/sublimetxt.jpg' %}" alt="sublimetext ">
+                <span>Sublime Text</span>
+            </div>
+        </div><br><br>
+
+      
+
+        <h3 class="text-center">Databases</h3>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="{% static 'images/Mysql.png' %}" alt="MySQL">
+                <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/Postgresql.webp' %}" alt="PostgreSQL">
+                <span>PostgreSQL</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/Monogo.png' %}" alt="MongoDB">
+                <span>MongoDB</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/SQlite.png' %}" alt="SQLite">
+                <span>SQLite</span>
+            </div>
+        </div>
+        <br><br>
+
+        <h3 class="text-center">Operating Systems</h3>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="{% static 'images/Windows.png' %}" alt="Windows">
+                <span>Windows</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/Linux.png' %}" alt="Linux">
+                <span>Linux</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/ubnt.png' %}" alt="Ubuntu">
+                <span>Ubuntu</span>
+            </div>
+        </div><br><br>
+        <h3 class="text-center">Office Tools</h3>
+        
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="{% static 'images/excel.webp' %}" alt="Excel">
+                <span>Excel</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/powerpoint.png' %}" alt="PowerPoint">
+                <span>PowerPoint</span>
+            </div>
+            <div class="skill-card">
+                <img src="{% static 'images/word.png' %}" alt="Word">
+                <span>Word</span>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/skill.js' %}"></script>
+</body>
+</html>
+
+
+
