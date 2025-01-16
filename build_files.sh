@@ -1,3 +1,5 @@
 # Build the project
+pip install -r requirements.txt
 
-python manage.py collectstatic --noinput
+python 3.12 manage.py collectstatic --noinput
+
