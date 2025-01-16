@@ -2,15 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "build_files.sh",
-      "use": "@vercel/static-build",
-      "config": {}
-    },
-    {
       "src": "project1/wsgi.py",
       "use": "@vercel/python",
       "config": {
-        "maxLambdaSize": "15mb",
         "runtime": "python3.12"
       }
     }
@@ -24,5 +18,6 @@
       "src": "/(.*)",
       "dest": "project1/wsgi.py"
     }
-  ]
+  ],
+  "buildCommand": "pip3 install -r requirements.txt && python3 manage.py collectstatic --noinput && python3 manage.py migrate --noinput"
 }
