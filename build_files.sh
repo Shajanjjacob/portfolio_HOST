@@ -1,9 +1,3 @@
-echo "BUILD START"
-
-pip install -r requirements.txt
-
-
-python manage.py collectstatic --noinput
-
-echo "BUILD END"
-
+pip3 install -r requirements.txt
+python3 manage.py collectstatic --noinput
+python3 manage.py migrate --noinput
