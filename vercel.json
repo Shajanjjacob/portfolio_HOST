@@ -2,6 +2,11 @@
   "version": 2,
   "builds": [
     {
+      "src": "build_files.sh",
+      "use": "@vercel/static-build",
+      "config": {}
+    },
+    {
       "src": "project1/wsgi.py",
       "use": "@vercel/python",
       "config": {
